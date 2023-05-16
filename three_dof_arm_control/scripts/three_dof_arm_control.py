@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import roslib
@@ -106,9 +106,6 @@ def inverse_kinematics_callback(data):
         time.sleep(0.1)
 
 if __name__ == "__main__":
-    global joint1
-    global joint2
-    global joint3
 
     rospy.init_node("three_dof_arm_control", anonymous=False)
 
